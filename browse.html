@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse</title>
+    <link rel="stylesheet" href="/browseStyle.css" />
+  </head>
+  <body>
+    <header>
+      <div class="tab">
+        <div class="img-logo">
+          <a href="/"
+            ><img src="images/netflix-logo.png" alt="netflix-logo"
+          /></a>
+        </div>
+        <div class="menu">
+          <a href="/browse.html" style="margin-right: 1em">Movies</a>
+          <a href="/browse.html">Series</a>
+        </div>
+      </div>
+      <div class="head-content">
+        <div class="header-content">
+          <h2>Watch JOKER NOW.</h2>
+          <h3>
+            In 1981 Gotham City, a struggling, mentally ill comic battles to be
+            seen. His life takes a dark, gut-wrenching turn after he lashes back
+            at attackers. Joaquin Phoenix and composer Hildur Guðnadóttir earned
+            Oscars for their work in Todd Phillips's take on the DC
+            supervillain.
+          </h3>
+          <div class="sign-up-wrapper">
+            <button><span class="cta-btn" onclick="showVideo()">Play</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </header>
+    <section>
+      <div class="drama">
+        <h6>Drama</h6>
+        <div class="films">
+          <div class="wrp" id="wrapper">
+            <div class="car" id="carousel">
+              <div class="cont" id="content">
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change1(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change1(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change1(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change1(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change1(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change1(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change1(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change1(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change1(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change1(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change1(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change1(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change1(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change1(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change1(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change1(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change1(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change1(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change1(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change1(this)"/>
+              </div>
+            </div>
+            <button class="pre" id="prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                />
+              </svg>
+            </button>
+            <button class="nxt" id="next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="wrap-display one">
+            <div class="display-card" >
+              <div class="desp">
+                <h4>Blue Valentine</h4>
+                <p>
+                  Cindy and Dean's dysfunctional marriage fails to stand the
+                  test of time as they try to raise their young daughter and
+                  rekindle their relationship.
+                </p>
+                <div class="sign-up-wrapper" style="margin-bottom: 1em;">
+                  <button><span class="cta-btn" onclick="showVideo()">Play</span></button>
+                </div>
+              </div>
+              <div class="image one-img">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="thriller">
+        <h6>Thriller</h6>
+        <div class="films">
+          <div class="wrp" id="wrapper2">
+            <div class="car" id="carousel2">
+              <div class="cont" id="content2">
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item"  onclick="change(this)"/>
+                <img src="/images/the-fighter.jpg" class="item"  onclick="change(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item"  onclick="change(this)"/>
+                <img src="images/joker-featured.jpg" class="item"  onclick="change(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg"  onclick="change(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item"  onclick="change(this)"/>
+                <img src="/images/the-fighter.jpg" class="item"  onclick="change(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item"  onclick="change(this)"/>
+                <img src="images/joker-featured.jpg" class="item"  onclick="change(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg"  onclick="change(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item"  onclick="change(this)"/>
+                <img src="/images/the-fighter.jpg" class="item"  onclick="change(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item"  onclick="change(this)"/>
+                <img src="images/joker-featured.jpg" class="item"  onclick="change(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg"  onclick="change(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item"  onclick="change(this)"/>
+                <img src="/images/the-fighter.jpg" class="item"  onclick="change(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item"  onclick="change(this)"/>
+                <img src="images/joker-featured.jpg" class="item"  onclick="change(this)"/>
+              </div>
+            </div>
+            <button class="pre" id="prev2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                />
+              </svg>
+            </button>
+            <button class="nxt" id="next2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="wrap-display two">
+            <div class="display-card" >
+              <div class="desp">
+                <h4>Blue Valentine</h4>
+                <p>
+                  Cindy and Dean's dysfunctional marriage fails to stand the
+                  test of time as they try to raise their young daughter and
+                  rekindle their relationship.
+                </p>
+                <div class="sign-up-wrapper" style="margin-bottom: 1em;">
+                  <button><span class="cta-btn" onclick="showVideo()">Play</span></button>
+                </div>
+              </div>
+              <div class="image two-img">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+      <div class="children">
+        <h6>Children</h6>
+        <div class="films">
+          <div class="wrp" id="wrapper3">
+            <div class="car" id="carousel3">
+              <div class="cont" id="content3">
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change3(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change3(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change3(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change3(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change3(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change3(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change3(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change3(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change3(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change3(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change3(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change3(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change3(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change3(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change3(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change3(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change3(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change3(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change3(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change3(this)"/>
+              </div>
+            </div>
+            <button class="pre" id="prev3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                />
+              </svg>
+            </button>
+            <button class="nxt" id="next3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="wrap-display three">
+            <div class="display-card" >
+              <div class="desp">
+                <h4>Blue Valentine</h4>
+                <p>
+                  Cindy and Dean's dysfunctional marriage fails to stand the
+                  test of time as they try to raise their young daughter and
+                  rekindle their relationship.
+                </p>
+                <div class="sign-up-wrapper" style="margin-bottom: 1em;">
+                  <button><span class="cta-btn" onclick="showVideo()">Play</span></button>
+                </div>
+              </div>
+              <div class="image three-img">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="suspense">
+        <h6>Suspence</h6>
+        <div class="films">
+          <div class="wrp" id="wrapper4">
+            <div class="car" id="carousel4">
+              <div class="cont" id="content4">
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change4(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change4(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change4(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change4(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change4(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change4(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change4(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change4(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change4(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change4(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change4(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change4(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change4(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change4(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change4(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change4(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item" onclick="change4(this)"/>
+                <img src="/images/the-fighter.jpg" class="item" onclick="change4(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item" onclick="change4(this)"/>
+                <img src="images/joker-featured.jpg" class="item" onclick="change4(this)"/>
+              </div>
+            </div>
+            <button class="pre" id="prev4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                />
+              </svg>
+            </button>
+            <button class="nxt" id="next4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="wrap-display  four">
+            <div class="display-card" >
+              <div class="desp">
+                <h4>Blue Valentine</h4>
+                <p>
+                  Cindy and Dean's dysfunctional marriage fails to stand the
+                  test of time as they try to raise their young daughter and
+                  rekindle their relationship.
+                </p>
+                <div class="sign-up-wrapper" style="margin-bottom: 1em;">
+                  <button><span class="cta-btn" onclick="showVideo()">Play</span></button>
+                </div>
+              </div>
+              <div class="image four-img">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="romance">
+        <h6>Romance</h6>
+        <div class="films">
+          <div class="wrp" id="wrapper5">
+            <div class="car" id="carousel5">
+              <div class="cont" id="content5">
+                <img class="item" src="/images/Blue-valentine.jpg" onclick="change5(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item"  onclick="change5(this)"/>
+                <img src="/images/the-fighter.jpg" class="item"  onclick="change5(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item"  onclick="change5(this)"/>
+                <img src="images/joker-featured.jpg" class="item"  onclick="change5(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg"  onclick="change5(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item"  onclick="change5(this)"/>
+                <img src="/images/the-fighter.jpg" class="item"  onclick="change5(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item"  onclick="change5(this)"/>
+                <img src="images/joker-featured.jpg" class="item"  onclick="change5(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg"  onclick="change5(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item"  onclick="change5(this)"/>
+                <img src="/images/the-fighter.jpg" class="item"  onclick="change5(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item"  onclick="change5(this)"/>
+                <img src="images/joker-featured.jpg" class="item"  onclick="change5(this)"/>
+                <img class="item" src="/images/Blue-valentine.jpg"  onclick="change5(this)"/>
+                <img src="/images/billy-elliot.jpg" class="item"  onclick="change5(this)"/>
+                <img src="/images/the-fighter.jpg" class="item"  onclick="change5(this)"/>
+                <img src="images/the-squid-and-the-whale.jpg" class="item"  onclick="change5(this)"/>
+                <img src="images/joker-featured.jpg" class="item"  onclick="change5(this)"/>
+              </div>
+            </div>
+            <button class="pre" id="prev5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                />
+              </svg>
+            </button>
+            <button class="nxt" id="next5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path
+                  d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="wrap-display five">
+            <div class="display-card " >
+              <div class="desp">
+                <h4>Blue Valentine</h4>
+                <p>
+                  Cindy and Dean's dysfunctional marriage fails to stand the
+                  test of time as they try to raise their young daughter and
+                  rekindle their relationship.
+                </p>
+                <div class="sign-up-wrapper" style="margin-bottom: 1em;">
+                  <button><span class="cta-btn" onclick="showVideo()">Play</span></button>
+                </div>
+              </div>
+              <div class="image five-img">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="play">
+      <div class="player">
+        <iframe src="https://www.youtube.com/embed/aILx69WrRhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+    <footer
+      style="
+        background-color: #000;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <div class="all-footer">
+        <div class="call">
+          <p>Questions? Call 000-800-040-1843</p>
+        </div>
+        <div class="footer-link1">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Ways to watch</a></li>
+          </ul>
+        </div>
+        <div class="footer-link2">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Ways to watch</a></li>
+          </ul>
+        </div>
+        <div class="footer-link3">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Ways to watch</a></li>
+          </ul>
+        </div>
+        <div class="footer-link4">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Ways to watch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="change"
+        style="
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        "
+      >
+        <div class="footer-lang" style="margin-top: 1rem; margin-left: 2.5rem">
+          <label>
+            <div class="footer-lang">
+              <i class="fa fa-globe" style="color: #333"></i>
+              <select>
+                <option value="">English</option>
+                <option value="">हिन्दी</option>
+              </select>
+            </div>
+          </label>
+        </div>
+        <p
+          style="
+            color: rgba(256, 256, 256, 0.8);
+            font-size: 0.8em;
+            margin-left: 2.5rem;
+          "
+        >
+          Netflix India
+        </p>
+      </div>
+    </footer>
+    <script src="/scriptBrowse.js"></script>
+  </body>
+</html>

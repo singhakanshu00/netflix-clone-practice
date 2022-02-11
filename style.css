@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --bg-color-theme: #e50914;
+  --backgroundColor: #000;
+  --color: #fff;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--backgroundColor);
+}
+h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  max-width: 640px;
+  margin: 0.5em;
+  padding: 0.5rem auto;
+}
+h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 1rem auto;
+}
+header {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("images/netflix-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0,
+    rgba(0, 0, 0, 0.4) 40%,
+    rgba(0, 0, 0, 0.4) 75%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+.tab {
+  width: 90%;
+  height: 8vh;
+  position: relative;
+  z-index: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.head-content {
+  height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-content {
+  position: relative;
+  z-index: 700;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+.img-logo {
+  width: 6rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: inherit;
+  height: auto;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  height: 2.6rem;
+  width: 100%;
+}
+button {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: var(--bg-color-theme);
+  border: 0;
+  color: var(--color);
+  cursor: pointer;
+}
+select {
+  border: 0;
+  background-color: transparent;
+  color: var(--color);
+}
+option {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.lang {
+  background-color: transparent;
+  border: solid 1px #fff;
+  width: 6rem;
+  height: 2rem;
+  margin-right: 1em;
+}
+.sign {
+  border: 0;
+  width: 4rem;
+  height: 2rem;
+  color: var(--color);
+  background-color: var(--bg-color-theme);
+}
+section {
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tv {
+  padding-top: 3rem;
+  background-color: var(--backgroundColor);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tv-header {
+  width: 80%;
+}
+.tv-vid {
+  width: 80%;
+}
+.tv-vid .img-frame {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.tv-vid .img-frame img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+.tv-back-vid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-element {
+  max-width: 100%;
+  height: auto;
+}
+.rule {
+  height: 1rem;
+  width: 100vw;
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+}
+.download {
+  padding-top: 3rem;
+  background-color: var(--backgroundColor);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download-header {
+  width: 80%;
+}
+.download-vid {
+  width: 80%;
+}
+.download-vid .img-frame {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.download-vid .img-frame img {
+  position: relative;
+  max-width: 100%;
+  max-height: auto;
+}
+.download-back-vid {
+  width: 100%;
+  max-height: 8vh;
+  max-width: 60%;
+  min-width: 15em;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translate(-50%);
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 2em 0 #000;
+  border-radius: 0.75em;
+}
+.video-element {
+  max-width: 100%;
+  height: auto;
+}
+.rule {
+  height: 1rem;
+  width: 100vw;
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.download-back-img {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download-back-img img {
+  width: 50%;
+  height: 90%;
+}
+.download-back-card {
+  width: 50%;
+}
+h6 {
+  color: var(--color);
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  padding: 0;
+}
+.download-back-card p {
+  color: #0071eb;
+  margin: 0;
+  padding: 0;
+}
+.gif {
+  width: 3em;
+  height: 3.75em;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    center center no-repeat;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  display: block;
+  background-size: 100%;
+  content: "";
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.device {
+  padding-top: 3rem;
+  background-color: var(--backgroundColor);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.device-header {
+  width: 80%;
+}
+.device-vid {
+  width: 80%;
+}
+.device-vid .img-frame {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.device-vid .img-frame img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+.device-back-vid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-element {
+  max-width: 100%;
+  height: auto;
+}
+.children {
+  padding-top: 3rem;
+  background-color: var(--backgroundColor);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.children-vid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.children-vid .img-frame {
+  width: 80%;
+}
+.children-vid .img-frame img {
+  width: 100%;
+  height: auto;
+}
+.faqs {
+  background-color: var(--backgroundColor);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.faq-head {
+  margin-top: 2rem;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+}
+.faq {
+  width: 100%;
+}
+.fa-questions {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+#btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #303030;
+  border: 0;
+  height: 8vh;
+}
+.fa-questions button p {
+  font-size: 1.2rem;
+  margin: 0.8rem;
+  color: var(--color);
+}
+.fa-questions button i {
+  font-size: 1.2rem;
+  color: var(--color);
+  margin-right: 15px;
+}
+.faq-answer {
+  color: var(--color);
+  padding: 20px;
+  background-color: #303030;
+  margin-top: 3px;
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
+.para {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 5em;
+}
+.signup input {
+  width: 100%;
+}
+.all-footer {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "ul1 ul2"
+    "ul3 ul4";
+}
+.call {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+}
+.call p {
+  color: #fff;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-link1 {
+  grid-area: ul1;
+}
+.footer-link2 {
+  grid-area: ul2;
+}
+.footer-link2 {
+  grid-area: ul2;
+}
+.footer-link2 {
+  grid-area: ul2;
+}
+a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 0.7em;
+}
+.footer-lang {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+}
+
+@media (min-width: 641px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  header {
+    height: 100vh;
+  }
+  .head-content {
+    height: 92vh;
+  }
+  .little {
+    font-size: 1rem;
+  }
+  .overlay {
+    height: 100vh;
+  }
+  .all-footer {
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "ul1 ul2 ul3 ul4";
+  }
+  a {
+    font-size: 1em;
+  }
+  .faqs {
+    width: 50%;
+  }
+  .para h3 {
+    font-size: 1em;
+  }
+  .signup {
+    flex-direction: row;
+  }
+  .signup input {
+    width: 70%;
+  }
+  .signup button {
+    width: 30%;
+  }
+}
+@media (min-width: 801px) {
+  h3 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  .head-content {
+    width: 50%;
+  }
+  .sign-up-wrapper {
+    flex-direction: row;
+  }
+  input {
+    width: 70%;
+    height: 4em;
+  }
+  button {
+    width: 30%;
+    height: 4.4em;
+  }
+  .tv {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .tv-header {
+    width: 40%;
+  }
+  .tv-header h3 {
+    font-size: 1em;
+  }
+  .tv-vid {
+    width: 40%;
+  }
+  .download {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .download-header {
+    width: 40%;
+    order: 1;
+  }
+  .download-header h3 {
+    font-size: 1em;
+  }
+  .download-vid {
+    width: 40%;
+    order: 0;
+  }
+  .device {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .device-header {
+    width: 40%;
+  }
+  .device-header h3 {
+    font-size: 1em;
+  }
+  .device-vid {
+    width: 40%;
+  }
+  .children {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .children-header {
+    width: 40%;
+    order: 1;
+  }
+  .children-header h3 {
+    font-size: 1em;
+  }
+  .children-vid {
+    width: 40%;
+    order: 0;
+  }
+}
